@@ -1,0 +1,62 @@
+body {
+    background-color: #F7ECDE;
+}
+
+header h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    color: #352e28;
+    font-weight: 500;
+}
+
+header h1::after {
+    content: '';
+    position: absolute;
+    background-color: #FEC260;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 50%;
+    border-radius: 3px;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+header h1:hover::after {
+    height: 80%;
+}
+
+header {
+    border-bottom: 2px dotted #000;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem #FADEB4;
+}
+
+
+#main-book {
+    h2 {
+        font-family: "Righteous", sans-serif;
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        font-size: 25px;
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
+    }
+    position: relative;
+   .container::after{
+content: '';
+position: absolute;
+border-bottom: 2px dotted #000;
+bottom: -10%;
+left: 0px;
+right: 0px;
+}
+}
+
+tbody{
+    tr{
+        vertical-align: baseline;
+    }
+}

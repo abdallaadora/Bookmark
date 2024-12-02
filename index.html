@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imag/add-bookmark-icon.png" type="image/x-icon">
+    <title>Bookmark</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="text-center m-5">
+        <h1 class="mb-5">BookMarker</h1>
+    </header>
+    <section class="" id="main-book">
+        <div class="container text-center position-relative">
+            <h2 class="mt-2 mb-5"><i class="fa-solid fa-bookmark mx-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark mx-2"></i></h2>
+            <div class="text-start">
+                <label for="siteName" class="form-label fw-bolder"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+                This Site Includes Please Enter Another One !
+            </div>
+            <div class="text-start my-3">
+                <label for="siteUrl" class="form-label fw-bolder"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            </div>
+            <div class="alert alert-light d-none">Please Enter a valied Link ex:http://www.example.com/</div>
+            <button class="btn btn-danger px-4" id="submitSite">Submit</button>
+        </div>
+    </section>
+    <section class="my-5">
+    <div class="container">
+        <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="" id="inner-table">
+             </tbody>
+          </table>
+    
+    </div> 
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
